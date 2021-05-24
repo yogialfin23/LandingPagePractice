@@ -1,0 +1,57 @@
+/* Navbar */
+
+.navbar-brand {
+    font-family: Viga;
+    font-size: 32px;
+}
+
+/* Utility */
+.btn-custom {
+    text-transform: uppercase;
+    border-radius: 40px;
+    border: 1px solid #2ed573;
+    color: #2ed573;
+}
+
+.btn-custom:hover {
+    background-color: #2ed573;
+    color: #fff;
+}
+
+.carousel-item {
+    background-color: black;
+    height: 32rem;
+    position: relative;
+}
+
+.overlay-image {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+
+/* Desktop Version */
+@media (min-width: 1200px) {
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+    .nav-link:hover::after {
+        content: "";
+        display: block;
+        border-bottom: 3px solid #7bed9f;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+}
